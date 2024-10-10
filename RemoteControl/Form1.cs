@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static RemoteControl.Form1;
 
 namespace RemoteControl
 {
@@ -25,19 +26,17 @@ namespace RemoteControl
         public const string USER_ACCOUNT_PU = "pu=pu";
         public const string USER_ACCOUNT_CFMADMIN = "cfmadmin=1qaz@wsx";
 
+        
         public Form1()
         {
             InitializeComponent();
         }
 
 
-
         #region RDR1 Remote Control
         private void btn_R1SWLRemote_Click(object sender, EventArgs e)
         {
             sIp = ReadIpFromFtp("RDR1_SWL.txt");
-
-            listBox1.Items.Add("开始远程登录");
 
             StartRemoteControl(RemoteControlDo, USER_ACCOUNT_NB);
         }
@@ -46,16 +45,12 @@ namespace RemoteControl
         {
             sIp = ReadIpFromFtp("RDR1_EOL_1.txt");
 
-            listBox1.Items.Add("开始远程登录");
-
             StartRemoteControl(RemoteControlDo, USER_ACCOUNT_NB);
         }
 
         private void btn_R1EOL2Remote_Click(object sender, EventArgs e)
         {
             sIp = ReadIpFromFtp("RDR1_EOL_2.txt");
-
-            listBox1.Items.Add("开始远程登录");
 
             StartRemoteControl(RemoteControlDo, USER_ACCOUNT_PU);
         }
@@ -64,16 +59,12 @@ namespace RemoteControl
         {
             sIp = ReadIpFromFtp("RDR1_Laser.txt");
 
-            listBox1.Items.Add("开始远程登录");
-
             StartRemoteControl(RemoteControlDo, USER_ACCOUNT_CFMADMIN);
         }
 
         private void btn_R1PDIRemote_Click(object sender, EventArgs e)
         {
             sIp = ReadIpFromFtp("RDR1_PDI.txt");
-
-            listBox1.Items.Add("开始远程登录");
 
             StartRemoteControl(RemoteControlDo, USER_ACCOUNT_CFMADMIN);
         }
@@ -82,17 +73,321 @@ namespace RemoteControl
         {
             sIp = ReadIpFromFtp("RDR1_Packing.txt");
 
-            listBox1.Items.Add("开始远程登录");
+            StartRemoteControl(RemoteControlDo, USER_ACCOUNT_CFMADMIN);
+        }
+        #endregion
+
+
+        private void checkBox_R1_IP_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox_R1_IP.Checked)
+            {
+                //lbl_R1_SWL_IP.Text = ReadIpFromFtp("RDR1_SWL.txt");
+                //lbl_R1_EOL1_IP.Text = ReadIpFromFtp("RDR1_EOL_1.txt");
+                //lbl_R1_EOL2_IP.Text = ReadIpFromFtp("RDR1_EOL_2.txt");
+                //lbl_R1_LASER_IP.Text = ReadIpFromFtp("RDR1_Laser.txt");
+                //lbl_R1_PDI_IP.Text = ReadIpFromFtp("RDR1_PDI.txt");
+                //lbl_R1_PACKING_IP.Text = ReadIpFromFtp("RDR1_Packing.txt");
+                Task.Run(() =>
+                {
+                    if (lbl_R1_SWL_IP.InvokeRequired)
+                    {
+                        lbl_R1_SWL_IP.Invoke(new Action(() =>
+                        {
+                            lbl_R1_SWL_IP.Text = ReadIpFromFtp("RDR1_SWL.txt");
+                        }));
+                    };
+
+                    if (lbl_R1_EOL1_IP.InvokeRequired)
+                    {
+                        lbl_R1_EOL1_IP.Invoke(new Action(() =>
+                        {
+                            lbl_R1_EOL1_IP.Text = ReadIpFromFtp("RDR1_EOL_1.txt");
+                        }));
+                    };
+
+                    if (lbl_R1_EOL2_IP.InvokeRequired)
+                    {
+                        lbl_R1_EOL2_IP.Invoke(new Action(() =>
+                        {
+                            lbl_R1_EOL2_IP.Text = ReadIpFromFtp("RDR1_EOL_2.txt");
+                        }));
+                    };
+
+                    if (lbl_R1_LASER_IP.InvokeRequired)
+                    {
+                        lbl_R1_LASER_IP.Invoke(new Action(() =>
+                        {
+                            lbl_R1_LASER_IP.Text = ReadIpFromFtp("RDR1_Laser.txt");
+                        }));
+                    };
+
+                    if (lbl_R1_PDI_IP.InvokeRequired)
+                    {
+                        lbl_R1_PDI_IP.Invoke(new Action(() =>
+                        {
+                            lbl_R1_PDI_IP.Text = ReadIpFromFtp("RDR1_PDI.txt");
+                        }));
+                    };
+
+                    if (lbl_R1_PACKING_IP.InvokeRequired)
+                    {
+                        lbl_R1_PACKING_IP.Invoke(new Action(() =>
+                        {
+                            lbl_R1_PACKING_IP.Text = ReadIpFromFtp("RDR1_Packing.txt");
+                        }));
+                    };
+                });
+
+
+                //lbl_R2_MASTER_IP.Text = ReadIpFromFtp("RDR2_SEL_MASTER.txt");
+                //lbl_R2_SWL_IP.Text = ReadIpFromFtp("RDR2_SEL_SWL.txt");
+                //lbl_R2_EOL_IP.Text = ReadIpFromFtp("RDR2_SEL_EOL.txt");
+                //lbl_R2_PDI_IP.Text = ReadIpFromFtp("RDR2_PDI.txt");
+                //lbl_R2_PACKING_IP.Text = ReadIpFromFtp("RDR2_Packing.txt");
+                Task.Run(new Action(() =>
+                {
+                    if (lbl_R2_MASTER_IP.InvokeRequired)
+                    {
+                        lbl_R2_MASTER_IP.Invoke(new Action(() =>
+                        {
+                            lbl_R2_MASTER_IP.Text = ReadIpFromFtp("RDR2_SEL_MASTER.txt");
+                        }));
+                    };
+
+                    if (lbl_R2_SWL_IP.InvokeRequired)
+                    {
+                        lbl_R2_SWL_IP.Invoke(new Action(() =>
+                        {
+                            lbl_R2_SWL_IP.Text = ReadIpFromFtp("RDR2_SEL_SWL.txt");
+                        }));
+                    };
+
+                    if (lbl_R2_EOL_IP.InvokeRequired)
+                    {
+                        lbl_R2_EOL_IP.Invoke(new Action(() =>
+                        {
+                            lbl_R2_EOL_IP.Text = ReadIpFromFtp("RDR2_SEL_EOL.txt");
+                        }));
+                    };
+
+                    if (lbl_R2_PDI_IP.InvokeRequired)
+                    {
+                        lbl_R2_PDI_IP.Invoke(new Action(() =>
+                        {
+                            lbl_R2_PDI_IP.Text = ReadIpFromFtp("RDR2_PDI.txt");
+                        }));
+                    };
+
+                    if (lbl_R2_PACKING_IP.InvokeRequired)
+                    {
+                        lbl_R2_PACKING_IP.Invoke(new Action(() =>
+                        {
+                            lbl_R2_PACKING_IP.Text = ReadIpFromFtp("RDR2_Packing.txt");
+                        }));
+                    };
+                }));
+
+
+                //lbl_R4_MASTER_IP.Text = ReadIpFromFtp("RDR4_SEL_MASTER.txt");
+                //lbl_R4_SWL_IP.Text = ReadIpFromFtp("RDR4_SEL_SWL.txt");
+                //lbl_R4_EOL_IP.Text = ReadIpFromFtp("RDR4_SEL_EOL.txt");
+                //lbl_R4_PDI_IP.Text = ReadIpFromFtp("RDR4_PDI.txt");
+                //lbl_R4_PACKING_IP.Text = ReadIpFromFtp("RDR4_Packing.txt");
+                Task.Run(new Action(() =>
+                {
+                    if (lbl_R4_MASTER_IP.InvokeRequired)
+                    {
+                        lbl_R4_MASTER_IP.Invoke(new Action(() =>
+                        {
+                            lbl_R4_MASTER_IP.Text = ReadIpFromFtp("RDR4_SEL_MASTER.txt");
+                        }));
+                    };
+
+                    if (lbl_R4_SWL_IP.InvokeRequired)
+                    {
+                        lbl_R4_SWL_IP.Invoke(new Action(() =>
+                        {
+                            lbl_R4_SWL_IP.Text = ReadIpFromFtp("RDR4_SEL_SWL.txt");
+                        }));
+                    };
+
+                    if (lbl_R4_EOL_IP.InvokeRequired)
+                    {
+                        lbl_R4_EOL_IP.Invoke(new Action(() =>
+                        {
+                            lbl_R4_EOL_IP.Text = ReadIpFromFtp("RDR4_SEL_EOL.txt");
+                        }));
+                    };
+
+                    if (lbl_R4_PDI_IP.InvokeRequired)
+                    {
+                        lbl_R4_PDI_IP.Invoke(new Action(() =>
+                        {
+                            lbl_R4_PDI_IP.Text = ReadIpFromFtp("RDR4_PDI.txt");
+                        }));
+                    };
+
+                    if (lbl_R4_PACKING_IP.InvokeRequired)
+                    {
+                        lbl_R4_PACKING_IP.Invoke(new Action(() =>
+                        {
+                            lbl_R4_PACKING_IP.Text = ReadIpFromFtp("RDR4_Packing.txt");
+                        }));
+                    };
+                }));
+
+
+                //lbl_R5_MASTER_IP.Text = ReadIpFromFtp("RDR5_SEL_MASTER.txt");
+                //lbl_R5_SWL_IP.Text = ReadIpFromFtp("RDR5_SEL_SWL.txt");
+                //lbl_R5_EOL_IP.Text = ReadIpFromFtp("RDR5_SEL_EOL.txt");
+                //lbl_R5_PDI_IP.Text = ReadIpFromFtp("RDR5_PDI.txt");
+                //lbl_R5_PACKING_IP.Text = ReadIpFromFtp("RDR5_Packing.txt");
+                Task.Run(new Action(() =>
+                {
+                    if (lbl_R5_MASTER_IP.InvokeRequired)
+                    {
+                        lbl_R5_MASTER_IP.Invoke(new Action(() =>
+                        {
+                            lbl_R5_MASTER_IP.Text = ReadIpFromFtp("RDR5_SEL_MASTER.txt");
+                        }));
+                    };
+
+                    if (lbl_R5_SWL_IP.InvokeRequired)
+                    {
+                        lbl_R5_SWL_IP.Invoke(new Action(() =>
+                        {
+                            lbl_R5_SWL_IP.Text = ReadIpFromFtp("RDR5_SEL_SWL.txt");
+                        }));
+                    };
+
+                    if (lbl_R5_EOL_IP.InvokeRequired)
+                    {
+                        lbl_R5_EOL_IP.Invoke(new Action(() =>
+                        {
+                            lbl_R5_EOL_IP.Text = ReadIpFromFtp("RDR5_SEL_EOL.txt");
+                        }));
+                    };
+
+                    if (lbl_R5_PDI_IP.InvokeRequired)
+                    {
+                        lbl_R5_PDI_IP.Invoke(new Action(() =>
+                        {
+                            lbl_R5_PDI_IP.Text = ReadIpFromFtp("RDR5_PDI.txt");
+                        }));
+                    };
+
+                    if (lbl_R5_PACKING_IP.InvokeRequired)
+                    {
+                        lbl_R5_PACKING_IP.Invoke(new Action(() =>
+                        {
+                            lbl_R5_PACKING_IP.Text = ReadIpFromFtp("RDR5_Packing.txt");
+                        }));
+                    };
+                }));
+            }
+            else
+            {
+                lbl_R1_SWL_IP.Text = "-";
+                lbl_R1_EOL1_IP.Text = "-";
+                lbl_R1_EOL2_IP.Text = "-";
+                lbl_R1_LASER_IP.Text = "-";
+                lbl_R1_PDI_IP.Text = "-";
+                lbl_R1_PACKING_IP.Text = "-";
+
+                lbl_R2_MASTER_IP.Text = "-";
+                lbl_R2_SWL_IP.Text = "-";
+                lbl_R2_EOL_IP.Text = "-";
+                lbl_R2_PDI_IP.Text = "-";
+                lbl_R2_PACKING_IP.Text = "-";
+
+                lbl_R4_MASTER_IP.Text = "-";
+                lbl_R4_SWL_IP.Text = "-";
+                lbl_R4_EOL_IP.Text = "-";
+                lbl_R4_PDI_IP.Text = "-";
+                lbl_R4_PACKING_IP.Text = "-";
+
+                lbl_R5_MASTER_IP.Text = "-";
+                lbl_R5_SWL_IP.Text = "-";
+                lbl_R5_EOL_IP.Text = "-";
+                lbl_R5_PDI_IP.Text = "-";
+                lbl_R5_PACKING_IP.Text = "-";
+            }
+        }
+
+
+        #region RDR2 Remote Control
+        private void btn_R2MasterRemote_Click(object sender, EventArgs e)
+        {
+            sIp = ReadIpFromFtp("RDR2_SEL_MASTER.txt");
+
+            StartRemoteControl(RemoteControlDo, USER_ACCOUNT_PU);
+        }
+
+        private void btn_R2SWLRemote_Click(object sender, EventArgs e)
+        {
+            sIp = ReadIpFromFtp("RDR2_SEL_SWL.txt");
+
+            StartRemoteControl(RemoteControlDo, USER_ACCOUNT_PU);
+        }
+
+        private void btn_R2EOLRemote_Click(object sender, EventArgs e)
+        {
+            sIp = ReadIpFromFtp("RDR2_SEL_EOL.txt");
+
+            StartRemoteControl(RemoteControlDo, USER_ACCOUNT_PU);
+        }
+
+        private void btn_R2PDIRemote_Click(object sender, EventArgs e)
+        {
+            sIp = ReadIpFromFtp("RDR2_PDI.txt");
+
+            StartRemoteControl(RemoteControlDo, USER_ACCOUNT_CFMADMIN);
+        }
+
+        private void btn_R2PackingRemote_Click(object sender, EventArgs e)
+        {
+            sIp = ReadIpFromFtp("RDR2_Packing.txt");
 
             StartRemoteControl(RemoteControlDo, USER_ACCOUNT_CFMADMIN);
         }
         #endregion
 
 
-        #region RDR2 Remote Control
-        private void btn_R2MasterRemote_Click(object sender, EventArgs e)
+        #region RDR4 Remote Control
+        private void btn_R4MasterRemote_Click(object sender, EventArgs e)
         {
+            sIp = ReadIpFromFtp("RDR4_SEL_MASTER.txt");
 
+            StartRemoteControl(RemoteControlDo, USER_ACCOUNT_PU);
+        }
+
+        private void btn_R4SWLRemote_Click(object sender, EventArgs e)
+        {
+            sIp = ReadIpFromFtp("RDR4_SEL_SWL.txt");
+
+            StartRemoteControl(RemoteControlDo, USER_ACCOUNT_PU);
+        }
+
+        private void btn_R4EOLRemote_Click(object sender, EventArgs e)
+        {
+            sIp = ReadIpFromFtp("RDR4_SEL_EOL.txt");
+
+            StartRemoteControl(RemoteControlDo, USER_ACCOUNT_PU);
+        }
+
+        private void btn_R4PDIRemote_Click(object sender, EventArgs e)
+        {
+            sIp = ReadIpFromFtp("RDR4_PDI.txt");
+
+            StartRemoteControl(RemoteControlDo, USER_ACCOUNT_CFMADMIN);
+        }
+
+        private void btn_R4PackingRemote_Click(object sender, EventArgs e)
+        {
+            sIp = ReadIpFromFtp("RDR4_Packing.txt");
+
+            StartRemoteControl(RemoteControlDo, USER_ACCOUNT_CFMADMIN);
         }
         #endregion
 
@@ -100,40 +395,47 @@ namespace RemoteControl
         #region RDR5 Remote Control
         private void btn_R5MasterRemote_Click(object sender, EventArgs e)
         {
-            sIp = "10.234.21.102";
-            sUser = "MAGNA\\pu";
-            sPwd = "pu";
-            //StartRemoteControl(RemoteControlDo);
+            sIp = ReadIpFromFtp("RDR5_SEL_MASTER.txt");
+
+            StartRemoteControl(RemoteControlDo, USER_ACCOUNT_PU);
         }
 
         private void btn_R5SWLRemote_Click(object sender, EventArgs e)
         {
-            sIp = "10.234.21.104";
-            sUser = "MAGNA\\pu";
-            sPwd = "pu";
-            //StartRemoteControl(RemoteControlDo);
+            sIp = ReadIpFromFtp("RDR5_SEL_SWL.txt");
+
+            StartRemoteControl(RemoteControlDo, USER_ACCOUNT_PU);
         }
 
         private void btn_R5EOLRemote_Click(object sender, EventArgs e)
         {
-            sIp = "10.234.21.107";
-            sUser = "MAGNA\\pu";
-            sPwd = "pu";
-            //StartRemoteControl(RemoteControlDo);
+            sIp = ReadIpFromFtp("RDR5_SEL_EOL.txt");
+
+            StartRemoteControl(RemoteControlDo, USER_ACCOUNT_PU);
         }
 
         private void btn_R5PDIRemote_Click(object sender, EventArgs e)
         {
+            sIp = ReadIpFromFtp("RDR5_PDI.txt");
 
+            StartRemoteControl(RemoteControlDo, USER_ACCOUNT_CFMADMIN);
         }
 
         private void btn_R5PackingRemote_Click(object sender, EventArgs e)
         {
+            sIp = ReadIpFromFtp("RDR5_Packing.txt");
 
+            StartRemoteControl(RemoteControlDo, USER_ACCOUNT_CFMADMIN);
         }
         #endregion
 
 
+
+        private void btn_Test_Click(object sender, EventArgs e)
+        {
+            
+
+        }
 
         private void StartRemoteControl(Action<string, string, string> act, string userAccount)
         {
@@ -175,9 +477,10 @@ namespace RemoteControl
         }
 
 
-
         private void RemoteControlDo(string ip, string user, string pwd)
         {
+            listBox1.Items.Add("开始远程登录！");
+
             Process rdcProcess = new Process();
             //使用Powershell自动保存此IP远程桌面的登录用户名和密码
             rdcProcess.StartInfo.FileName = Environment.ExpandEnvironmentVariables(@"%SystemRoot%\system32\cmdkey.exe");
@@ -197,6 +500,8 @@ namespace RemoteControl
             rdcProcess.Start();
         }
 
+
+
         private string ReadIpFromFtp(string file)
         {
             string line = "";
@@ -204,6 +509,21 @@ namespace RemoteControl
             string lineStation = "";
             string lineIp = "";
             string ipFileLocalPath = "";
+
+            //if (listBox1.InvokeRequired)
+            //{
+            //    listBox1.Invoke(new Action(() =>
+            //    {
+            //        listBox1.Items.Add("====================================================================================");
+            //    }));
+            //}
+            //else
+            //{
+            //    listBox1.Items.Add("====================================================================================");
+            //}
+
+            listBox1.Items.Add("====================================================================================");
+
 
             try
             {
@@ -217,8 +537,7 @@ namespace RemoteControl
 
                 ftpHelper.Download(ipFileLocalPath, file);
 
-                listBox1.Items.Add("====================================================================================");
-                listBox1.Items.Add("ip地址文件下载成功");
+                listBox1.Items.Add("ip地址文件下载成功！");
 
                 StreamReader sr = new StreamReader(Path.Combine(ipFileLocalPath, file));
                 line = sr.ReadLine();
@@ -247,18 +566,19 @@ namespace RemoteControl
             }
             catch (Exception ex)
             {
+                listBox1.Items.Add("ip地址文件下载异常！");
                 listBox1.Items.Add(ex.Message);
-                throw ex;
+
+                FileInfo fi = new FileInfo(Path.Combine(ipFileLocalPath, file));
+                if (fi.Length == 0)
+                {
+                    listBox1.Items.Add("ip地址文件下载失败，文件大小为0！");
+                    return "";
+                }
+
+                return "";
+                //throw ex;
             }
-
-        }
-
-
-
-
-        private void btn_Test_Click(object sender, EventArgs e)
-        {
-
 
         }
 
