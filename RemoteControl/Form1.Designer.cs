@@ -29,14 +29,25 @@
         private void InitializeComponent()
         {
             this.groupBoxRDR5 = new System.Windows.Forms.GroupBox();
+            this.lbl_R5_PACKING_IP = new System.Windows.Forms.Label();
             this.btn_R5PackingRemote = new System.Windows.Forms.Button();
+            this.lbl_R5_PDI_IP = new System.Windows.Forms.Label();
             this.btn_R5PDIRemote = new System.Windows.Forms.Button();
+            this.lbl_R5_EOL_IP = new System.Windows.Forms.Label();
             this.btn_R5EOLRemote = new System.Windows.Forms.Button();
+            this.lbl_R5_SWL_IP = new System.Windows.Forms.Label();
             this.btn_R5SWLRemote = new System.Windows.Forms.Button();
+            this.lbl_R5_MASTER_IP = new System.Windows.Forms.Label();
             this.btn_R5MasterRemote = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.btn_Test = new System.Windows.Forms.Button();
             this.groupBoxRDR1 = new System.Windows.Forms.GroupBox();
+            this.lbl_R1_PACKING_IP = new System.Windows.Forms.Label();
+            this.lbl_R1_PDI_IP = new System.Windows.Forms.Label();
+            this.lbl_R1_LASER_IP = new System.Windows.Forms.Label();
+            this.lbl_R1_EOL2_IP = new System.Windows.Forms.Label();
+            this.lbl_R1_EOL1_IP = new System.Windows.Forms.Label();
+            this.lbl_R1_SWL_IP = new System.Windows.Forms.Label();
             this.btn_R1LaserRemote = new System.Windows.Forms.Button();
             this.btn_R1EOL2Remote = new System.Windows.Forms.Button();
             this.btn_R1PackingRemote = new System.Windows.Forms.Button();
@@ -44,39 +55,28 @@
             this.btn_R1EOL1Remote = new System.Windows.Forms.Button();
             this.btn_R1SWLRemote = new System.Windows.Forms.Button();
             this.groupBoxRDR2 = new System.Windows.Forms.GroupBox();
+            this.lbl_R2_PACKING_IP = new System.Windows.Forms.Label();
+            this.lbl_R2_PDI_IP = new System.Windows.Forms.Label();
+            this.lbl_R2_EOL_IP = new System.Windows.Forms.Label();
+            this.lbl_R2_SWL_IP = new System.Windows.Forms.Label();
+            this.lbl_R2_MASTER_IP = new System.Windows.Forms.Label();
             this.btn_R2PackingRemote = new System.Windows.Forms.Button();
             this.btn_R2PDIRemote = new System.Windows.Forms.Button();
             this.btn_R2EOLRemote = new System.Windows.Forms.Button();
             this.btn_R2SWLRemote = new System.Windows.Forms.Button();
             this.btn_R2MasterRemote = new System.Windows.Forms.Button();
             this.groupBoxRDR4 = new System.Windows.Forms.GroupBox();
-            this.btn_R4PackingRemote = new System.Windows.Forms.Button();
-            this.btn_R4PDIRemote = new System.Windows.Forms.Button();
-            this.btn_R4EOLRemote = new System.Windows.Forms.Button();
-            this.btn_R4SWLRemote = new System.Windows.Forms.Button();
-            this.btn_R4MasterRemote = new System.Windows.Forms.Button();
-            this.lbl_R1_SWL_IP = new System.Windows.Forms.Label();
-            this.checkBox_R1_IP = new System.Windows.Forms.CheckBox();
-            this.lbl_R1_EOL1_IP = new System.Windows.Forms.Label();
-            this.lbl_R1_EOL2_IP = new System.Windows.Forms.Label();
-            this.lbl_R1_LASER_IP = new System.Windows.Forms.Label();
-            this.lbl_R1_PDI_IP = new System.Windows.Forms.Label();
-            this.lbl_R1_PACKING_IP = new System.Windows.Forms.Label();
-            this.lbl_R2_MASTER_IP = new System.Windows.Forms.Label();
-            this.lbl_R2_SWL_IP = new System.Windows.Forms.Label();
-            this.lbl_R2_EOL_IP = new System.Windows.Forms.Label();
-            this.lbl_R2_PDI_IP = new System.Windows.Forms.Label();
-            this.lbl_R2_PACKING_IP = new System.Windows.Forms.Label();
             this.lbl_R4_PACKING_IP = new System.Windows.Forms.Label();
+            this.btn_R4PackingRemote = new System.Windows.Forms.Button();
             this.lbl_R4_PDI_IP = new System.Windows.Forms.Label();
+            this.btn_R4PDIRemote = new System.Windows.Forms.Button();
             this.lbl_R4_EOL_IP = new System.Windows.Forms.Label();
+            this.btn_R4EOLRemote = new System.Windows.Forms.Button();
             this.lbl_R4_SWL_IP = new System.Windows.Forms.Label();
+            this.btn_R4SWLRemote = new System.Windows.Forms.Button();
             this.lbl_R4_MASTER_IP = new System.Windows.Forms.Label();
-            this.lbl_R5_PACKING_IP = new System.Windows.Forms.Label();
-            this.lbl_R5_PDI_IP = new System.Windows.Forms.Label();
-            this.lbl_R5_EOL_IP = new System.Windows.Forms.Label();
-            this.lbl_R5_SWL_IP = new System.Windows.Forms.Label();
-            this.lbl_R5_MASTER_IP = new System.Windows.Forms.Label();
+            this.btn_R4MasterRemote = new System.Windows.Forms.Button();
+            this.checkBox_R1_IP = new System.Windows.Forms.CheckBox();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.groupBoxRDR5.SuspendLayout();
             this.groupBoxRDR1.SuspendLayout();
@@ -108,6 +108,16 @@
             this.groupBoxRDR5.TabStop = false;
             this.groupBoxRDR5.Text = "RDR5";
             // 
+            // lbl_R5_PACKING_IP
+            // 
+            this.lbl_R5_PACKING_IP.AutoSize = true;
+            this.lbl_R5_PACKING_IP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_R5_PACKING_IP.Location = new System.Drawing.Point(6, 400);
+            this.lbl_R5_PACKING_IP.Name = "lbl_R5_PACKING_IP";
+            this.lbl_R5_PACKING_IP.Size = new System.Drawing.Size(14, 20);
+            this.lbl_R5_PACKING_IP.TabIndex = 28;
+            this.lbl_R5_PACKING_IP.Text = "-";
+            // 
             // btn_R5PackingRemote
             // 
             this.btn_R5PackingRemote.Location = new System.Drawing.Point(6, 354);
@@ -117,6 +127,16 @@
             this.btn_R5PackingRemote.Text = "PACKING";
             this.btn_R5PackingRemote.UseVisualStyleBackColor = true;
             this.btn_R5PackingRemote.Click += new System.EventHandler(this.btn_R5PackingRemote_Click);
+            // 
+            // lbl_R5_PDI_IP
+            // 
+            this.lbl_R5_PDI_IP.AutoSize = true;
+            this.lbl_R5_PDI_IP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_R5_PDI_IP.Location = new System.Drawing.Point(6, 319);
+            this.lbl_R5_PDI_IP.Name = "lbl_R5_PDI_IP";
+            this.lbl_R5_PDI_IP.Size = new System.Drawing.Size(14, 20);
+            this.lbl_R5_PDI_IP.TabIndex = 27;
+            this.lbl_R5_PDI_IP.Text = "-";
             // 
             // btn_R5PDIRemote
             // 
@@ -128,6 +148,16 @@
             this.btn_R5PDIRemote.UseVisualStyleBackColor = true;
             this.btn_R5PDIRemote.Click += new System.EventHandler(this.btn_R5PDIRemote_Click);
             // 
+            // lbl_R5_EOL_IP
+            // 
+            this.lbl_R5_EOL_IP.AutoSize = true;
+            this.lbl_R5_EOL_IP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_R5_EOL_IP.Location = new System.Drawing.Point(6, 238);
+            this.lbl_R5_EOL_IP.Name = "lbl_R5_EOL_IP";
+            this.lbl_R5_EOL_IP.Size = new System.Drawing.Size(14, 20);
+            this.lbl_R5_EOL_IP.TabIndex = 26;
+            this.lbl_R5_EOL_IP.Text = "-";
+            // 
             // btn_R5EOLRemote
             // 
             this.btn_R5EOLRemote.Location = new System.Drawing.Point(6, 192);
@@ -138,6 +168,16 @@
             this.btn_R5EOLRemote.UseVisualStyleBackColor = true;
             this.btn_R5EOLRemote.Click += new System.EventHandler(this.btn_R5EOLRemote_Click);
             // 
+            // lbl_R5_SWL_IP
+            // 
+            this.lbl_R5_SWL_IP.AutoSize = true;
+            this.lbl_R5_SWL_IP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_R5_SWL_IP.Location = new System.Drawing.Point(6, 157);
+            this.lbl_R5_SWL_IP.Name = "lbl_R5_SWL_IP";
+            this.lbl_R5_SWL_IP.Size = new System.Drawing.Size(14, 20);
+            this.lbl_R5_SWL_IP.TabIndex = 25;
+            this.lbl_R5_SWL_IP.Text = "-";
+            // 
             // btn_R5SWLRemote
             // 
             this.btn_R5SWLRemote.Location = new System.Drawing.Point(6, 111);
@@ -147,6 +187,16 @@
             this.btn_R5SWLRemote.Text = "SWL";
             this.btn_R5SWLRemote.UseVisualStyleBackColor = true;
             this.btn_R5SWLRemote.Click += new System.EventHandler(this.btn_R5SWLRemote_Click);
+            // 
+            // lbl_R5_MASTER_IP
+            // 
+            this.lbl_R5_MASTER_IP.AutoSize = true;
+            this.lbl_R5_MASTER_IP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_R5_MASTER_IP.Location = new System.Drawing.Point(6, 76);
+            this.lbl_R5_MASTER_IP.Name = "lbl_R5_MASTER_IP";
+            this.lbl_R5_MASTER_IP.Size = new System.Drawing.Size(14, 20);
+            this.lbl_R5_MASTER_IP.TabIndex = 24;
+            this.lbl_R5_MASTER_IP.Text = "-";
             // 
             // btn_R5MasterRemote
             // 
@@ -199,6 +249,66 @@
             this.groupBoxRDR1.TabIndex = 6;
             this.groupBoxRDR1.TabStop = false;
             this.groupBoxRDR1.Text = "RDR1";
+            // 
+            // lbl_R1_PACKING_IP
+            // 
+            this.lbl_R1_PACKING_IP.AutoSize = true;
+            this.lbl_R1_PACKING_IP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_R1_PACKING_IP.Location = new System.Drawing.Point(6, 486);
+            this.lbl_R1_PACKING_IP.Name = "lbl_R1_PACKING_IP";
+            this.lbl_R1_PACKING_IP.Size = new System.Drawing.Size(14, 20);
+            this.lbl_R1_PACKING_IP.TabIndex = 13;
+            this.lbl_R1_PACKING_IP.Text = "-";
+            // 
+            // lbl_R1_PDI_IP
+            // 
+            this.lbl_R1_PDI_IP.AutoSize = true;
+            this.lbl_R1_PDI_IP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_R1_PDI_IP.Location = new System.Drawing.Point(6, 404);
+            this.lbl_R1_PDI_IP.Name = "lbl_R1_PDI_IP";
+            this.lbl_R1_PDI_IP.Size = new System.Drawing.Size(14, 20);
+            this.lbl_R1_PDI_IP.TabIndex = 12;
+            this.lbl_R1_PDI_IP.Text = "-";
+            // 
+            // lbl_R1_LASER_IP
+            // 
+            this.lbl_R1_LASER_IP.AutoSize = true;
+            this.lbl_R1_LASER_IP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_R1_LASER_IP.Location = new System.Drawing.Point(6, 322);
+            this.lbl_R1_LASER_IP.Name = "lbl_R1_LASER_IP";
+            this.lbl_R1_LASER_IP.Size = new System.Drawing.Size(14, 20);
+            this.lbl_R1_LASER_IP.TabIndex = 11;
+            this.lbl_R1_LASER_IP.Text = "-";
+            // 
+            // lbl_R1_EOL2_IP
+            // 
+            this.lbl_R1_EOL2_IP.AutoSize = true;
+            this.lbl_R1_EOL2_IP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_R1_EOL2_IP.Location = new System.Drawing.Point(6, 240);
+            this.lbl_R1_EOL2_IP.Name = "lbl_R1_EOL2_IP";
+            this.lbl_R1_EOL2_IP.Size = new System.Drawing.Size(14, 20);
+            this.lbl_R1_EOL2_IP.TabIndex = 10;
+            this.lbl_R1_EOL2_IP.Text = "-";
+            // 
+            // lbl_R1_EOL1_IP
+            // 
+            this.lbl_R1_EOL1_IP.AutoSize = true;
+            this.lbl_R1_EOL1_IP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_R1_EOL1_IP.Location = new System.Drawing.Point(6, 158);
+            this.lbl_R1_EOL1_IP.Name = "lbl_R1_EOL1_IP";
+            this.lbl_R1_EOL1_IP.Size = new System.Drawing.Size(14, 20);
+            this.lbl_R1_EOL1_IP.TabIndex = 9;
+            this.lbl_R1_EOL1_IP.Text = "-";
+            // 
+            // lbl_R1_SWL_IP
+            // 
+            this.lbl_R1_SWL_IP.AutoSize = true;
+            this.lbl_R1_SWL_IP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_R1_SWL_IP.Location = new System.Drawing.Point(6, 76);
+            this.lbl_R1_SWL_IP.Name = "lbl_R1_SWL_IP";
+            this.lbl_R1_SWL_IP.Size = new System.Drawing.Size(14, 20);
+            this.lbl_R1_SWL_IP.TabIndex = 8;
+            this.lbl_R1_SWL_IP.Text = "-";
             // 
             // btn_R1LaserRemote
             // 
@@ -280,6 +390,56 @@
             this.groupBoxRDR2.TabStop = false;
             this.groupBoxRDR2.Text = "RDR2";
             // 
+            // lbl_R2_PACKING_IP
+            // 
+            this.lbl_R2_PACKING_IP.AutoSize = true;
+            this.lbl_R2_PACKING_IP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_R2_PACKING_IP.Location = new System.Drawing.Point(6, 400);
+            this.lbl_R2_PACKING_IP.Name = "lbl_R2_PACKING_IP";
+            this.lbl_R2_PACKING_IP.Size = new System.Drawing.Size(14, 20);
+            this.lbl_R2_PACKING_IP.TabIndex = 18;
+            this.lbl_R2_PACKING_IP.Text = "-";
+            // 
+            // lbl_R2_PDI_IP
+            // 
+            this.lbl_R2_PDI_IP.AutoSize = true;
+            this.lbl_R2_PDI_IP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_R2_PDI_IP.Location = new System.Drawing.Point(6, 319);
+            this.lbl_R2_PDI_IP.Name = "lbl_R2_PDI_IP";
+            this.lbl_R2_PDI_IP.Size = new System.Drawing.Size(14, 20);
+            this.lbl_R2_PDI_IP.TabIndex = 17;
+            this.lbl_R2_PDI_IP.Text = "-";
+            // 
+            // lbl_R2_EOL_IP
+            // 
+            this.lbl_R2_EOL_IP.AutoSize = true;
+            this.lbl_R2_EOL_IP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_R2_EOL_IP.Location = new System.Drawing.Point(6, 238);
+            this.lbl_R2_EOL_IP.Name = "lbl_R2_EOL_IP";
+            this.lbl_R2_EOL_IP.Size = new System.Drawing.Size(14, 20);
+            this.lbl_R2_EOL_IP.TabIndex = 16;
+            this.lbl_R2_EOL_IP.Text = "-";
+            // 
+            // lbl_R2_SWL_IP
+            // 
+            this.lbl_R2_SWL_IP.AutoSize = true;
+            this.lbl_R2_SWL_IP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_R2_SWL_IP.Location = new System.Drawing.Point(6, 157);
+            this.lbl_R2_SWL_IP.Name = "lbl_R2_SWL_IP";
+            this.lbl_R2_SWL_IP.Size = new System.Drawing.Size(14, 20);
+            this.lbl_R2_SWL_IP.TabIndex = 15;
+            this.lbl_R2_SWL_IP.Text = "-";
+            // 
+            // lbl_R2_MASTER_IP
+            // 
+            this.lbl_R2_MASTER_IP.AutoSize = true;
+            this.lbl_R2_MASTER_IP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_R2_MASTER_IP.Location = new System.Drawing.Point(6, 76);
+            this.lbl_R2_MASTER_IP.Name = "lbl_R2_MASTER_IP";
+            this.lbl_R2_MASTER_IP.Size = new System.Drawing.Size(14, 20);
+            this.lbl_R2_MASTER_IP.TabIndex = 14;
+            this.lbl_R2_MASTER_IP.Text = "-";
+            // 
             // btn_R2PackingRemote
             // 
             this.btn_R2PackingRemote.Location = new System.Drawing.Point(6, 354);
@@ -350,6 +510,16 @@
             this.groupBoxRDR4.TabStop = false;
             this.groupBoxRDR4.Text = "RDR4";
             // 
+            // lbl_R4_PACKING_IP
+            // 
+            this.lbl_R4_PACKING_IP.AutoSize = true;
+            this.lbl_R4_PACKING_IP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_R4_PACKING_IP.Location = new System.Drawing.Point(6, 400);
+            this.lbl_R4_PACKING_IP.Name = "lbl_R4_PACKING_IP";
+            this.lbl_R4_PACKING_IP.Size = new System.Drawing.Size(14, 20);
+            this.lbl_R4_PACKING_IP.TabIndex = 23;
+            this.lbl_R4_PACKING_IP.Text = "-";
+            // 
             // btn_R4PackingRemote
             // 
             this.btn_R4PackingRemote.Location = new System.Drawing.Point(6, 354);
@@ -359,6 +529,16 @@
             this.btn_R4PackingRemote.Text = "PACKING";
             this.btn_R4PackingRemote.UseVisualStyleBackColor = true;
             this.btn_R4PackingRemote.Click += new System.EventHandler(this.btn_R4PackingRemote_Click);
+            // 
+            // lbl_R4_PDI_IP
+            // 
+            this.lbl_R4_PDI_IP.AutoSize = true;
+            this.lbl_R4_PDI_IP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_R4_PDI_IP.Location = new System.Drawing.Point(6, 319);
+            this.lbl_R4_PDI_IP.Name = "lbl_R4_PDI_IP";
+            this.lbl_R4_PDI_IP.Size = new System.Drawing.Size(14, 20);
+            this.lbl_R4_PDI_IP.TabIndex = 22;
+            this.lbl_R4_PDI_IP.Text = "-";
             // 
             // btn_R4PDIRemote
             // 
@@ -370,6 +550,16 @@
             this.btn_R4PDIRemote.UseVisualStyleBackColor = true;
             this.btn_R4PDIRemote.Click += new System.EventHandler(this.btn_R4PDIRemote_Click);
             // 
+            // lbl_R4_EOL_IP
+            // 
+            this.lbl_R4_EOL_IP.AutoSize = true;
+            this.lbl_R4_EOL_IP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_R4_EOL_IP.Location = new System.Drawing.Point(6, 238);
+            this.lbl_R4_EOL_IP.Name = "lbl_R4_EOL_IP";
+            this.lbl_R4_EOL_IP.Size = new System.Drawing.Size(14, 20);
+            this.lbl_R4_EOL_IP.TabIndex = 21;
+            this.lbl_R4_EOL_IP.Text = "-";
+            // 
             // btn_R4EOLRemote
             // 
             this.btn_R4EOLRemote.Location = new System.Drawing.Point(6, 192);
@@ -379,6 +569,16 @@
             this.btn_R4EOLRemote.Text = "EOL";
             this.btn_R4EOLRemote.UseVisualStyleBackColor = true;
             this.btn_R4EOLRemote.Click += new System.EventHandler(this.btn_R4EOLRemote_Click);
+            // 
+            // lbl_R4_SWL_IP
+            // 
+            this.lbl_R4_SWL_IP.AutoSize = true;
+            this.lbl_R4_SWL_IP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_R4_SWL_IP.Location = new System.Drawing.Point(6, 157);
+            this.lbl_R4_SWL_IP.Name = "lbl_R4_SWL_IP";
+            this.lbl_R4_SWL_IP.Size = new System.Drawing.Size(14, 20);
+            this.lbl_R4_SWL_IP.TabIndex = 20;
+            this.lbl_R4_SWL_IP.Text = "-";
             // 
             // btn_R4SWLRemote
             // 
@@ -390,6 +590,16 @@
             this.btn_R4SWLRemote.UseVisualStyleBackColor = true;
             this.btn_R4SWLRemote.Click += new System.EventHandler(this.btn_R4SWLRemote_Click);
             // 
+            // lbl_R4_MASTER_IP
+            // 
+            this.lbl_R4_MASTER_IP.AutoSize = true;
+            this.lbl_R4_MASTER_IP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_R4_MASTER_IP.Location = new System.Drawing.Point(6, 76);
+            this.lbl_R4_MASTER_IP.Name = "lbl_R4_MASTER_IP";
+            this.lbl_R4_MASTER_IP.Size = new System.Drawing.Size(14, 20);
+            this.lbl_R4_MASTER_IP.TabIndex = 19;
+            this.lbl_R4_MASTER_IP.Text = "-";
+            // 
             // btn_R4MasterRemote
             // 
             this.btn_R4MasterRemote.Location = new System.Drawing.Point(6, 30);
@@ -399,16 +609,6 @@
             this.btn_R4MasterRemote.Text = " MASTER";
             this.btn_R4MasterRemote.UseVisualStyleBackColor = true;
             this.btn_R4MasterRemote.Click += new System.EventHandler(this.btn_R4MasterRemote_Click);
-            // 
-            // lbl_R1_SWL_IP
-            // 
-            this.lbl_R1_SWL_IP.AutoSize = true;
-            this.lbl_R1_SWL_IP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_R1_SWL_IP.Location = new System.Drawing.Point(6, 76);
-            this.lbl_R1_SWL_IP.Name = "lbl_R1_SWL_IP";
-            this.lbl_R1_SWL_IP.Size = new System.Drawing.Size(14, 20);
-            this.lbl_R1_SWL_IP.TabIndex = 8;
-            this.lbl_R1_SWL_IP.Text = "-";
             // 
             // checkBox_R1_IP
             // 
@@ -421,206 +621,6 @@
             this.checkBox_R1_IP.Text = "IP";
             this.checkBox_R1_IP.UseVisualStyleBackColor = true;
             this.checkBox_R1_IP.CheckedChanged += new System.EventHandler(this.checkBox_R1_IP_CheckedChanged);
-            // 
-            // lbl_R1_EOL1_IP
-            // 
-            this.lbl_R1_EOL1_IP.AutoSize = true;
-            this.lbl_R1_EOL1_IP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_R1_EOL1_IP.Location = new System.Drawing.Point(6, 158);
-            this.lbl_R1_EOL1_IP.Name = "lbl_R1_EOL1_IP";
-            this.lbl_R1_EOL1_IP.Size = new System.Drawing.Size(14, 20);
-            this.lbl_R1_EOL1_IP.TabIndex = 9;
-            this.lbl_R1_EOL1_IP.Text = "-";
-            // 
-            // lbl_R1_EOL2_IP
-            // 
-            this.lbl_R1_EOL2_IP.AutoSize = true;
-            this.lbl_R1_EOL2_IP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_R1_EOL2_IP.Location = new System.Drawing.Point(6, 240);
-            this.lbl_R1_EOL2_IP.Name = "lbl_R1_EOL2_IP";
-            this.lbl_R1_EOL2_IP.Size = new System.Drawing.Size(14, 20);
-            this.lbl_R1_EOL2_IP.TabIndex = 10;
-            this.lbl_R1_EOL2_IP.Text = "-";
-            // 
-            // lbl_R1_LASER_IP
-            // 
-            this.lbl_R1_LASER_IP.AutoSize = true;
-            this.lbl_R1_LASER_IP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_R1_LASER_IP.Location = new System.Drawing.Point(6, 322);
-            this.lbl_R1_LASER_IP.Name = "lbl_R1_LASER_IP";
-            this.lbl_R1_LASER_IP.Size = new System.Drawing.Size(14, 20);
-            this.lbl_R1_LASER_IP.TabIndex = 11;
-            this.lbl_R1_LASER_IP.Text = "-";
-            // 
-            // lbl_R1_PDI_IP
-            // 
-            this.lbl_R1_PDI_IP.AutoSize = true;
-            this.lbl_R1_PDI_IP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_R1_PDI_IP.Location = new System.Drawing.Point(6, 404);
-            this.lbl_R1_PDI_IP.Name = "lbl_R1_PDI_IP";
-            this.lbl_R1_PDI_IP.Size = new System.Drawing.Size(14, 20);
-            this.lbl_R1_PDI_IP.TabIndex = 12;
-            this.lbl_R1_PDI_IP.Text = "-";
-            // 
-            // lbl_R1_PACKING_IP
-            // 
-            this.lbl_R1_PACKING_IP.AutoSize = true;
-            this.lbl_R1_PACKING_IP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_R1_PACKING_IP.Location = new System.Drawing.Point(6, 486);
-            this.lbl_R1_PACKING_IP.Name = "lbl_R1_PACKING_IP";
-            this.lbl_R1_PACKING_IP.Size = new System.Drawing.Size(14, 20);
-            this.lbl_R1_PACKING_IP.TabIndex = 13;
-            this.lbl_R1_PACKING_IP.Text = "-";
-            // 
-            // lbl_R2_MASTER_IP
-            // 
-            this.lbl_R2_MASTER_IP.AutoSize = true;
-            this.lbl_R2_MASTER_IP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_R2_MASTER_IP.Location = new System.Drawing.Point(6, 76);
-            this.lbl_R2_MASTER_IP.Name = "lbl_R2_MASTER_IP";
-            this.lbl_R2_MASTER_IP.Size = new System.Drawing.Size(14, 20);
-            this.lbl_R2_MASTER_IP.TabIndex = 14;
-            this.lbl_R2_MASTER_IP.Text = "-";
-            // 
-            // lbl_R2_SWL_IP
-            // 
-            this.lbl_R2_SWL_IP.AutoSize = true;
-            this.lbl_R2_SWL_IP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_R2_SWL_IP.Location = new System.Drawing.Point(6, 157);
-            this.lbl_R2_SWL_IP.Name = "lbl_R2_SWL_IP";
-            this.lbl_R2_SWL_IP.Size = new System.Drawing.Size(14, 20);
-            this.lbl_R2_SWL_IP.TabIndex = 15;
-            this.lbl_R2_SWL_IP.Text = "-";
-            // 
-            // lbl_R2_EOL_IP
-            // 
-            this.lbl_R2_EOL_IP.AutoSize = true;
-            this.lbl_R2_EOL_IP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_R2_EOL_IP.Location = new System.Drawing.Point(6, 238);
-            this.lbl_R2_EOL_IP.Name = "lbl_R2_EOL_IP";
-            this.lbl_R2_EOL_IP.Size = new System.Drawing.Size(14, 20);
-            this.lbl_R2_EOL_IP.TabIndex = 16;
-            this.lbl_R2_EOL_IP.Text = "-";
-            // 
-            // lbl_R2_PDI_IP
-            // 
-            this.lbl_R2_PDI_IP.AutoSize = true;
-            this.lbl_R2_PDI_IP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_R2_PDI_IP.Location = new System.Drawing.Point(6, 319);
-            this.lbl_R2_PDI_IP.Name = "lbl_R2_PDI_IP";
-            this.lbl_R2_PDI_IP.Size = new System.Drawing.Size(14, 20);
-            this.lbl_R2_PDI_IP.TabIndex = 17;
-            this.lbl_R2_PDI_IP.Text = "-";
-            // 
-            // lbl_R2_PACKING_IP
-            // 
-            this.lbl_R2_PACKING_IP.AutoSize = true;
-            this.lbl_R2_PACKING_IP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_R2_PACKING_IP.Location = new System.Drawing.Point(6, 400);
-            this.lbl_R2_PACKING_IP.Name = "lbl_R2_PACKING_IP";
-            this.lbl_R2_PACKING_IP.Size = new System.Drawing.Size(14, 20);
-            this.lbl_R2_PACKING_IP.TabIndex = 18;
-            this.lbl_R2_PACKING_IP.Text = "-";
-            // 
-            // lbl_R4_PACKING_IP
-            // 
-            this.lbl_R4_PACKING_IP.AutoSize = true;
-            this.lbl_R4_PACKING_IP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_R4_PACKING_IP.Location = new System.Drawing.Point(6, 400);
-            this.lbl_R4_PACKING_IP.Name = "lbl_R4_PACKING_IP";
-            this.lbl_R4_PACKING_IP.Size = new System.Drawing.Size(14, 20);
-            this.lbl_R4_PACKING_IP.TabIndex = 23;
-            this.lbl_R4_PACKING_IP.Text = "-";
-            // 
-            // lbl_R4_PDI_IP
-            // 
-            this.lbl_R4_PDI_IP.AutoSize = true;
-            this.lbl_R4_PDI_IP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_R4_PDI_IP.Location = new System.Drawing.Point(6, 319);
-            this.lbl_R4_PDI_IP.Name = "lbl_R4_PDI_IP";
-            this.lbl_R4_PDI_IP.Size = new System.Drawing.Size(14, 20);
-            this.lbl_R4_PDI_IP.TabIndex = 22;
-            this.lbl_R4_PDI_IP.Text = "-";
-            // 
-            // lbl_R4_EOL_IP
-            // 
-            this.lbl_R4_EOL_IP.AutoSize = true;
-            this.lbl_R4_EOL_IP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_R4_EOL_IP.Location = new System.Drawing.Point(6, 238);
-            this.lbl_R4_EOL_IP.Name = "lbl_R4_EOL_IP";
-            this.lbl_R4_EOL_IP.Size = new System.Drawing.Size(14, 20);
-            this.lbl_R4_EOL_IP.TabIndex = 21;
-            this.lbl_R4_EOL_IP.Text = "-";
-            // 
-            // lbl_R4_SWL_IP
-            // 
-            this.lbl_R4_SWL_IP.AutoSize = true;
-            this.lbl_R4_SWL_IP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_R4_SWL_IP.Location = new System.Drawing.Point(6, 157);
-            this.lbl_R4_SWL_IP.Name = "lbl_R4_SWL_IP";
-            this.lbl_R4_SWL_IP.Size = new System.Drawing.Size(14, 20);
-            this.lbl_R4_SWL_IP.TabIndex = 20;
-            this.lbl_R4_SWL_IP.Text = "-";
-            // 
-            // lbl_R4_MASTER_IP
-            // 
-            this.lbl_R4_MASTER_IP.AutoSize = true;
-            this.lbl_R4_MASTER_IP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_R4_MASTER_IP.Location = new System.Drawing.Point(6, 76);
-            this.lbl_R4_MASTER_IP.Name = "lbl_R4_MASTER_IP";
-            this.lbl_R4_MASTER_IP.Size = new System.Drawing.Size(14, 20);
-            this.lbl_R4_MASTER_IP.TabIndex = 19;
-            this.lbl_R4_MASTER_IP.Text = "-";
-            // 
-            // lbl_R5_PACKING_IP
-            // 
-            this.lbl_R5_PACKING_IP.AutoSize = true;
-            this.lbl_R5_PACKING_IP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_R5_PACKING_IP.Location = new System.Drawing.Point(6, 400);
-            this.lbl_R5_PACKING_IP.Name = "lbl_R5_PACKING_IP";
-            this.lbl_R5_PACKING_IP.Size = new System.Drawing.Size(14, 20);
-            this.lbl_R5_PACKING_IP.TabIndex = 28;
-            this.lbl_R5_PACKING_IP.Text = "-";
-            // 
-            // lbl_R5_PDI_IP
-            // 
-            this.lbl_R5_PDI_IP.AutoSize = true;
-            this.lbl_R5_PDI_IP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_R5_PDI_IP.Location = new System.Drawing.Point(6, 319);
-            this.lbl_R5_PDI_IP.Name = "lbl_R5_PDI_IP";
-            this.lbl_R5_PDI_IP.Size = new System.Drawing.Size(14, 20);
-            this.lbl_R5_PDI_IP.TabIndex = 27;
-            this.lbl_R5_PDI_IP.Text = "-";
-            // 
-            // lbl_R5_EOL_IP
-            // 
-            this.lbl_R5_EOL_IP.AutoSize = true;
-            this.lbl_R5_EOL_IP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_R5_EOL_IP.Location = new System.Drawing.Point(6, 238);
-            this.lbl_R5_EOL_IP.Name = "lbl_R5_EOL_IP";
-            this.lbl_R5_EOL_IP.Size = new System.Drawing.Size(14, 20);
-            this.lbl_R5_EOL_IP.TabIndex = 26;
-            this.lbl_R5_EOL_IP.Text = "-";
-            // 
-            // lbl_R5_SWL_IP
-            // 
-            this.lbl_R5_SWL_IP.AutoSize = true;
-            this.lbl_R5_SWL_IP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_R5_SWL_IP.Location = new System.Drawing.Point(6, 157);
-            this.lbl_R5_SWL_IP.Name = "lbl_R5_SWL_IP";
-            this.lbl_R5_SWL_IP.Size = new System.Drawing.Size(14, 20);
-            this.lbl_R5_SWL_IP.TabIndex = 25;
-            this.lbl_R5_SWL_IP.Text = "-";
-            // 
-            // lbl_R5_MASTER_IP
-            // 
-            this.lbl_R5_MASTER_IP.AutoSize = true;
-            this.lbl_R5_MASTER_IP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_R5_MASTER_IP.Location = new System.Drawing.Point(6, 76);
-            this.lbl_R5_MASTER_IP.Name = "lbl_R5_MASTER_IP";
-            this.lbl_R5_MASTER_IP.Size = new System.Drawing.Size(14, 20);
-            this.lbl_R5_MASTER_IP.TabIndex = 24;
-            this.lbl_R5_MASTER_IP.Text = "-";
             // 
             // splitContainer1
             // 
@@ -655,7 +655,7 @@
             this.Controls.Add(this.splitContainer1);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "RemoteControl V2.0";
+            this.Text = "RemoteControl V2.1";
             this.groupBoxRDR5.ResumeLayout(false);
             this.groupBoxRDR5.PerformLayout();
             this.groupBoxRDR1.ResumeLayout(false);
